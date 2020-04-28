@@ -140,7 +140,9 @@ The LSTM recurrent layer comprises of memory units called the LSTM. <br>
 <b>Steps to define the neural network:</b> -<br>
     
 1. The first step is to create the instance of the sequence class. After defining the sequence class, we create the layer and add those to this sequence class. We are naming the class as lstm_nn_model<br>
+
 2. The first layer is the <b>input layer</b>. In this layer we are embedding the input features and the output dimensions to form the first layer for the neural network model.<br>
+
 3. The second layer is the <b>hidden LSTM layer</b>. The LSTM unit contains the following<br>
     a. Dropout rate is 0.3 - Drop<br>
     b. Recurrent dropout rate is 0.2<br>
@@ -148,7 +150,9 @@ The LSTM recurrent layer comprises of memory units called the LSTM. <br>
 4. The third layer is a <b>simple dropout layer</b> which will help in reducing oberfitting by dropping 0.4 features<br>
 
 5. The fourth layer is the <b>Dense layer</b> of LSTM units. In this layer we are applying an activation function - <b>tanh</b><br>
+
 6. The fifth layer is again a simple <b>dropout layer</b> with 0.5% drop out rate<br>
+
 7. The last layer is the <b>output layer</b>. In the output layer we using another activation function <b>Softmax</b> and setting the output neurons to be 2.
 
 ### Compile the Network
